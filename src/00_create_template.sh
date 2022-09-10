@@ -1,9 +1,13 @@
 #!/bin/sh
+# Create templates for C++ and shell scripts.
+#
+# Usage:
+# ./00_create_template basename
+# -> src/basename.cc ../build/shell_basename.sh
 
 script_base_name=$1
 
 touch ${script_base_name}.cc
-# touch ../build/shell_${script_base_name}.sh
 
 cat <<EOF0 > ../build/shell_${script_base_name}.sh
 #!/bin/sh
