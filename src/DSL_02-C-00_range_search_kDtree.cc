@@ -9,12 +9,12 @@ class Node {
   public:
     int location;
     int p, left, right;
-    Node(){}
+  Node(){}
 };
 
 class Point {
   public:
-  int id, x, y;
+    int id, x, y;
   Point(){}
   Point(int id, int x, int y): id(id), x(x), y(y) {}
   bool operator < (const Point &p) const {
