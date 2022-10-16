@@ -1,14 +1,14 @@
 #include<cstdio>
 #define MAX 1000000
 
-class DisjointSet {
+class DisjointTree {
   public:
     int pointer;
-  DisjointSet(){}
-  DisjointSet(int pointer): pointer(pointer) {}
+  DisjointTree(){}
+  DisjointTree(int pointer): pointer(pointer) {}
 };
 
-DisjointSet forest[MAX];
+DisjointTree forest[MAX];
 int ranks[MAX];
 
 void init_disjoint_tree(int n) {
